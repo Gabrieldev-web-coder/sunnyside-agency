@@ -11,6 +11,13 @@
     --barlow:'Barlow', sans-serif;
     --frauces:'Fraunces', serif;
     --bodyFontSize:18px;
+    --titleFontSize:2.8rem;
+    @media screen and (min-width:280px){
+        --titleFontSize:2.4rem;
+    }
+    @media screen and (min-width:320px){
+        --titleFontSize:2.8rem;
+    }
 }
 
 *{
