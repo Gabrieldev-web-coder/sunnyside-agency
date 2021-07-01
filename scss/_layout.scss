@@ -30,4 +30,13 @@
         letter-spacing: .3rem;
         top: 18%;
     }
+    .header__title::after{
+        content: "";
+        position: absolute;
+        left: 0px;
+        width: 100vw;
+        height: 130px;
+        background: url(/images/icon-arrow-down.svg) top center/40px no-repeat;
+
+    }
 }
