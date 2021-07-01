@@ -95,4 +95,33 @@
         border-radius: 4px;
         opacity: .5;
     }
+
+    //  <-------- MAIN-ABOUT ------->  //
+
+.main__about-article{
+    figure{
+        display: flex;
+    }
+    position: relative;
+    .main__about-text-container{
+        position: absolute;
+        z-index: 2;
+        top: 372px;
+        .main__about-h3{
+            font: normal normal 700 2rem var(--frauces);
+            margin: 1rem 0;
+        }
+        .main__about-p{
+            line-height: 1.8rem;
+            padding: 1rem 1rem;
+        }
+    }
+    .cherry{
+        color:var(--darkDesaturatedCyan);
+    }
+    .orange{
+        color:var(--darkBlue);
+    }
+}
+
 }
