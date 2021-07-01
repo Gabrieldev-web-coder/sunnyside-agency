@@ -12,6 +12,14 @@
   --frauces:'Fraunces', serif;
   --bodyFontSize:18px;
   --titleFontSize:2.8rem;
+  --arrowSize:20px;
+  --arrowHeight:65px;
+  --valueCalc:2%;
+  /*
+    @media screen and (min-width:425px){
+
+    }
+    */
 }
 
 @media screen and (min-width: 280px) {
@@ -23,6 +31,18 @@
 @media screen and (min-width: 320px) {
   :root {
     --titleFontSize:2.8rem;
+    --arrowSize:25px;
+    --arrowHeight:100px;
+    --valueCalc:5%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  :root {
+    --titleFontSize:2.8rem;
+    --arrowSize:40px;
+    --arrowHeight:126px;
+    --valueCalc:3%;
   }
 }
 
@@ -45,6 +65,8 @@ img {
 #header {
   display: -ms-grid;
   display: grid;
+  background: url(/images/mobile/image-header.jpg) top center/contain no-repeat;
+  height: 638px;
 }
 
 #header .header__nav, #header .header__title {
@@ -85,9 +107,10 @@ img {
 #header .header__title::after {
   content: "";
   position: absolute;
+  margin-top: calc(25% + var(--valueCalc));
   left: 0px;
   width: 100vw;
-  height: 130px;
-  background: url(/images/icon-arrow-down.svg) top center/40px no-repeat;
+  height: var(--arrowHeight);
+  background: url(/images/icon-arrow-down.svg) top center/var(--arrowSize) no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

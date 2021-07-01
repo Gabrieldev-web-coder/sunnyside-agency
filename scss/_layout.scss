@@ -4,6 +4,8 @@
 
 #header{
     display:grid;
+    background: url(/images/mobile/image-header.jpg) top center/contain no-repeat;
+    height: 638px;
     .header__nav, .header__title{
         position: absolute;
         z-index: 1;
@@ -33,10 +35,10 @@
     .header__title::after{
         content: "";
         position: absolute;
+        margin-top: calc(25% + var(--valueCalc));
         left: 0px;
         width: 100vw;
-        height: 130px;
-        background: url(/images/icon-arrow-down.svg) top center/40px no-repeat;
-
+        height: var(--arrowHeight);
+        background: url(/images/icon-arrow-down.svg) top center/var(--arrowSize) no-repeat;
     }
 }
