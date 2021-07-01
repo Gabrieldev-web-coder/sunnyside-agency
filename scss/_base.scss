@@ -12,11 +12,16 @@
     --frauces:'Fraunces', serif;
     --bodyFontSize:18px;
     --titleFontSize:2.8rem;
+    --arrowSize:40px;
     @media screen and (min-width:280px){
         --titleFontSize:2.4rem;
+        --arrowSize:20px;
     }
     @media screen and (min-width:320px){
-        --titleFontSize:2.8rem;
+        --titleFontSize:2.8rem
+    }
+    @media screen and (min-width:375px){
+        --arrowSize:40px;
     }
 }
 

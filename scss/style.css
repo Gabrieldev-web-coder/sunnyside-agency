@@ -12,17 +12,26 @@
   --frauces:'Fraunces', serif;
   --bodyFontSize:18px;
   --titleFontSize:2.8rem;
+  --arrowSize:40px;
 }
 
 @media screen and (min-width: 280px) {
   :root {
     --titleFontSize:2.4rem;
+    --arrowSize:20px;
   }
 }
 
 @media screen and (min-width: 320px) {
   :root {
-    --titleFontSize:2.8rem;
+    --titleFontSize:2.8rem
+    ;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  :root {
+    --arrowSize:40px;
   }
 }
 
@@ -88,6 +97,6 @@ img {
   left: 0px;
   width: 100vw;
   height: 130px;
-  background: url(/images/icon-arrow-down.svg) top center/40px no-repeat;
+  background: url(/images/icon-arrow-down.svg) top center/var(--arrowSize) no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
