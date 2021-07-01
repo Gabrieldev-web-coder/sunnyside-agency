@@ -4,8 +4,6 @@
 
 #header{
     display:grid;
-    background: url(/images/mobile/image-header.jpg) top center/contain no-repeat;
-    height: 638px;
     .header__nav, .header__title{
         position: absolute;
         z-index: 1;
