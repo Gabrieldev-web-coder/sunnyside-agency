@@ -99,14 +99,16 @@
     //  <-------- MAIN-ABOUT ------->  //
 
 .main__about-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     figure{
         display: flex;
+        position: relative;
     }
-    position: relative;
     .main__about-text-container{
         position: absolute;
-        z-index: 2;
-        top: 372px;
         .main__about-h3{
             font: normal normal 700 2rem var(--frauces);
             margin: 1rem 0;
@@ -123,5 +125,93 @@
         color:var(--darkBlue);
     }
 }
+}
 
+    //  <-------- MAIN-TESTIMONIAL-CARDS ------->  //
+
+#main__testimonial{
+    margin-bottom: 4rem;
+    .main__testimonial-h3{
+        font: normal normal 700 18px var(--frauces);
+        letter-spacing: .1rem;
+        color: var(--grayishBlue);
+        text-transform: uppercase;
+        margin: 4rem 0rem 2rem 0rem;
+        text-align: center;
+    }
+    .main__testimonial-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main__card{
+        margin: 2rem 1.1rem;
+        line-height: 1.8rem;
+        color: var(--veryDarkGrayishBlue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 375px;
+    }
+    .main__card-p{
+        margin: 1.5rem 0rem;
+    }
+    .main__card-name{
+        color: var(--veryDarkDesaturatedBlue);
+        font: normal normal 700 18px var(--frauces);
+        margin-bottom: .5rem;
+    }
+    .main__card-position{
+        color: var(--grayishBlue);
+        font: normal normal 700 14px var(--frauces);
+    }
+    .main__card-img{
+        width: 60px;
+        border-radius: 100%;
+}
+}
+
+    //  <-------- FOOTER ------->  //
+
+#footer{
+    background-color: var(--darkModerateCyan);
+    color:var(--darkDesaturatedCyan);
+    text-align: center;
+    .footer__wrapper{
+        display: flex;
+        flex-flow: row wrap;
+            .footer__wrapper-image{
+                width: 50%;
+                max-width: 196px;
+            }
+    }
+    .footer__bottom{
+        padding: 3.5rem 0;
+        .footer__bottom-figure{
+            img{
+                width:50%;
+            }
+        }
+        .footer__bottom-container{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1.5rem 0rem 0rem 0rem;
+        }
+    }
+    .footer__bottom-icons{
+        padding: 3rem 0;
+        i{
+            margin: 0rem .5rem;
+        }
+    }
+}
+
+    //  <-------- MEDIA-QUERIES ------->  //
+
+@media screen and (min-width:340px){
+    .main__about-text-container{
+        margin-bottom: var(--porcentMargin);
+    }        
 }

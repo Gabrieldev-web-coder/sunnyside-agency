@@ -15,6 +15,7 @@
     --arrowSize:20px;
     --arrowHeight:65px;
     --valueCalc:2%;
+    --porcentMargin:10%;
     @media screen and (min-width:280px){
         --titleFontSize:2.4rem;
     }
@@ -43,7 +44,6 @@ body{
     background-color: var(--white);
 }
 
-
-img{
+.image__fullwithd,.image__header,.header__img{
     width: 100%;
 }
