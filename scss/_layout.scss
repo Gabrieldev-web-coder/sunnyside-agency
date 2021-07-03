@@ -11,26 +11,48 @@
         padding: 1rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
         .icon-menu{
             color: var(--white);
             font-size: 1.699rem;
+            padding: .5rem;
+            background-position: center;
+            transition: background 0.8s;
+            border-radius: 100%;
         }
+        .icon-menu:active{
+            background-color: var(--yellow);
+            background-size: 100%;
+            transition: background 0s;
+        }
+        //  <-------- NAV-MENU-STYLES ------->  //
         ul{
             list-style: none;
             text-align: center;
             color: var(--veryDarkGrayishBlue);
             position: absolute;
             background-color: var(--white);
-            width: 91%;
+            width: var(--hamburgerMenuPorcent);
             z-index: 1;
             left: 0;
             top: 85px;
             margin: 0rem 1rem;
             flex-direction: column;
             align-items: flex-end;
+            border-radius: 5px;
+            border-top-right-radius: 0;
             li{
-                margin:1.5rem auto;
+                margin:1.3rem auto;
+                cursor: pointer;
+            }
+            #header__nav-btn-contact{
+                padding: 1rem 1.8rem;
+                color: var(--veryDarkDesaturatedBlue);
+                font: normal normal 700 18px var(--frauces);
+                background-color: var(--yellow);
+                text-transform: uppercase;
+                border-radius: 30px;
             }
         }
         ul::before{

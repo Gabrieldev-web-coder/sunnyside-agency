@@ -16,11 +16,13 @@
   --arrowHeight:65px;
   --valueCalc:2%;
   --porcentMargin:10%;
+  --hamburgerMenuPorcent:91%;
 }
 
 @media screen and (min-width: 280px) {
   :root {
     --titleFontSize:2.4rem;
+    --hamburgerMenuPorcent:86%;
   }
 }
 
@@ -30,6 +32,13 @@
     --arrowSize:25px;
     --arrowHeight:100px;
     --valueCalc:5%;
+    --hamburgerMenuPorcent: 87%;
+  }
+}
+
+@media screen and (min-width: 340px) {
+  :root {
+    --hamburgerMenuPorcent: 88%;
   }
 }
 
@@ -39,6 +48,13 @@
     --arrowSize:40px;
     --arrowHeight:126px;
     --valueCalc:3%;
+    --hamburgerMenuPorcent: 89%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  :root {
+    --hamburgerMenuPorcent: 90%;
   }
 }
 
@@ -75,12 +91,27 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 #header .header__nav .icon-menu {
   color: var(--white);
   font-size: 1.699rem;
+  padding: .5rem;
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+  border-radius: 100%;
+}
+
+#header .header__nav .icon-menu:active {
+  background-color: var(--yellow);
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
 }
 
 #header .header__nav ul {
@@ -89,7 +120,7 @@ body {
   color: var(--veryDarkGrayishBlue);
   position: absolute;
   background-color: var(--white);
-  width: 91%;
+  width: var(--hamburgerMenuPorcent);
   z-index: 1;
   left: 0;
   top: 85px;
@@ -101,10 +132,22 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border-radius: 5px;
+  border-top-right-radius: 0;
 }
 
 #header .header__nav ul li {
-  margin: 1.5rem auto;
+  margin: 1.3rem auto;
+  cursor: pointer;
+}
+
+#header .header__nav ul #header__nav-btn-contact {
+  padding: 1rem 1.8rem;
+  color: var(--veryDarkDesaturatedBlue);
+  font: normal normal 700 18px var(--frauces);
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  border-radius: 30px;
 }
 
 #header .header__nav ul::before {

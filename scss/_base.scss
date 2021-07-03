@@ -16,20 +16,30 @@
     --arrowHeight:65px;
     --valueCalc:2%;
     --porcentMargin:10%;
+    --hamburgerMenuPorcent:91%;
     @media screen and (min-width:280px){
         --titleFontSize:2.4rem;
+        --hamburgerMenuPorcent:86%;
     }
     @media screen and (min-width:320px){
         --titleFontSize:2.8rem;
         --arrowSize:25px;
         --arrowHeight:100px;
         --valueCalc:5%;
+        --hamburgerMenuPorcent: 87%;
+    }
+    @media screen and (min-width:340px){
+        --hamburgerMenuPorcent: 88%;
     }
     @media screen and (min-width:375px){
         --titleFontSize:2.8rem;
         --arrowSize:40px;
         --arrowHeight:126px;
         --valueCalc:3%;
+        --hamburgerMenuPorcent: 89%;
+    }
+    @media screen and (min-width:425px){
+        --hamburgerMenuPorcent: 90%;
     }
 }
 
