@@ -6,7 +6,6 @@
     display:grid;
     .header__nav, .header__title{
         position: absolute;
-        z-index: 1;
     }
     .header__nav{
         padding: 1rem;
@@ -16,6 +15,32 @@
         .icon-menu{
             color: var(--white);
             font-size: 1.699rem;
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            color: var(--veryDarkGrayishBlue);
+            position: absolute;
+            background-color: var(--white);
+            width: 91%;
+            z-index: 1;
+            left: 0;
+            top: 85px;
+            margin: 0rem 1rem;
+            flex-direction: column;
+            align-items: flex-end;
+            li{
+                margin:1.5rem auto;
+            }
+        }
+        ul::before{
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid var(--white);
+            border-left: 20px solid transparent;
+            position: absolute;
+            top: -20px;
         }
     .header__logo{
         margin-top: 0.1rem;
