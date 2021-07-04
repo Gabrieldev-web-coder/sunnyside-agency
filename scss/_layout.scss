@@ -26,7 +26,7 @@
             background-size: 100%;
             transition: background 0s;
         }
-        //  <-------- NAV-MENU-STYLES ------->  //
+        //  <-------- UL-MENU-STYLES ------->  //
         ul{
             list-style: none;
             text-align: center;
@@ -36,12 +36,17 @@
             width: var(--hamburgerMenuPorcent);
             z-index: 1;
             left: 0;
-            top: 85px;
+            top: 49px;
+            opacity: 0;
             margin: 0rem 1rem;
             flex-direction: column;
             align-items: flex-end;
             border-radius: 5px;
             border-top-right-radius: 0;
+            animation-name:animation-opener;
+            animation-duration: .8s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
             li{
                 margin:1.3rem auto;
                 cursor: pointer;
@@ -64,6 +69,20 @@
             position: absolute;
             top: -20px;
         }
+
+        //  <-------- ANIMATIONS-FOR-UL ------->  //
+
+        @keyframes animation-opener {
+            from{
+                top: 49px;
+                opacity: 0;
+            }
+            to{
+                top: 85px;
+                opacity: 1;
+            }
+        }
+
     .header__logo{
         margin-top: 0.1rem;
     }
