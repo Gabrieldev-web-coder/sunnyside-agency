@@ -28,6 +28,7 @@
         }
         //  <-------- UL-MENU-STYLES ------->  //
         ul{
+            display: none;
             list-style: none;
             text-align: center;
             color: var(--veryDarkGrayishBlue);
@@ -43,10 +44,9 @@
             align-items: flex-end;
             border-radius: 5px;
             border-top-right-radius: 0;
-            animation-name:animation-opener;
-            animation-duration: .8s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: forwards;
+            /*
+           
+            */
             li{
                 margin:1.3rem auto;
                 cursor: pointer;
@@ -71,6 +71,21 @@
         }
 
         //  <-------- ANIMATIONS-FOR-UL ------->  //
+        .animation{
+            display: flex;
+            animation-name:animation-opener;
+            animation-duration: .7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .animation-backwards{
+            display: flex;
+            animation-name:animation-close;
+            animation-duration: .7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
 
         @keyframes animation-opener {
             from{
@@ -80,6 +95,18 @@
             to{
                 top: 85px;
                 opacity: 1;
+            }
+        }
+
+        @keyframes animation-close {
+            from{
+                top: 85px;
+                opacity: 1;
+                
+            }
+            to{
+                top: 49px;
+                opacity: 0;
             }
         }
 

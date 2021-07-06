@@ -115,6 +115,7 @@ body {
 }
 
 #header .header__nav ul {
+  display: none;
   list-style: none;
   text-align: center;
   color: var(--veryDarkGrayishBlue);
@@ -135,14 +136,9 @@ body {
           align-items: flex-end;
   border-radius: 5px;
   border-top-right-radius: 0;
-  -webkit-animation-name: animation-opener;
-          animation-name: animation-opener;
-  -webkit-animation-duration: .8s;
-          animation-duration: .8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  /*
+           
+            */
 }
 
 #header .header__nav ul li {
@@ -169,6 +165,34 @@ body {
   top: -20px;
 }
 
+#header .header__nav .animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: animation-opener;
+          animation-name: animation-opener;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#header .header__nav .animation-backwards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: animation-close;
+          animation-name: animation-close;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes animation-opener {
   from {
     top: 49px;
@@ -188,6 +212,28 @@ body {
   to {
     top: 85px;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes animation-close {
+  from {
+    top: 85px;
+    opacity: 1;
+  }
+  to {
+    top: 49px;
+    opacity: 0;
+  }
+}
+
+@keyframes animation-close {
+  from {
+    top: 85px;
+    opacity: 1;
+  }
+  to {
+    top: 49px;
+    opacity: 0;
   }
 }
 
