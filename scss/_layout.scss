@@ -28,7 +28,7 @@
         }
         //  <-------- UL-MENU-STYLES ------->  //
         ul{
-            display: none;
+            display: flex;
             list-style: none;
             text-align: center;
             color: var(--veryDarkGrayishBlue);
@@ -37,16 +37,15 @@
             width: var(--hamburgerMenuPorcent);
             z-index: 1;
             left: 0;
-            top: 49px;
+            top: 69px;
             opacity: 0;
             margin: 0rem 1rem;
             flex-direction: column;
             align-items: flex-end;
             border-radius: 5px;
             border-top-right-radius: 0;
-            /*
-           
-            */
+            transition: .7s;
+
             li{
                 margin:1.3rem auto;
                 cursor: pointer;
@@ -72,42 +71,9 @@
 
         //  <-------- ANIMATIONS-FOR-UL ------->  //
         .animation{
-            display: flex;
-            animation-name:animation-opener;
-            animation-duration: .7s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-
-        .animation-backwards{
-            display: flex;
-            animation-name:animation-close;
-            animation-duration: .7s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes animation-opener {
-            from{
-                top: 49px;
-                opacity: 0;
-            }
-            to{
-                top: 85px;
-                opacity: 1;
-            }
-        }
-
-        @keyframes animation-close {
-            from{
-                top: 85px;
-                opacity: 1;
-                
-            }
-            to{
-                top: 49px;
-                opacity: 0;
-            }
+            transition: .7s;
+            top: 95px;
+            opacity: 1;
         }
 
     .header__logo{
