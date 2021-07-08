@@ -103,9 +103,9 @@
 //  <-------- MAIN-SECTION ------->  //
 
 #main__section{
-    display: grid;
-    text-align: center;
     color: var(--veryDarkGrayishBlue);
+    text-align: center;
+    display: grid;
     .main__section-article{
         display: flex;
         flex-direction: column;
@@ -275,7 +275,34 @@
 }
 
 @media screen and (min-width:667px) {
-
+    #main__section{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'art-transform img-transform'
+    'img-stand art-stand';
+    .main__section-article{
+        padding: 1.5rem 1.5rem;
+        font-size: 14px;
+        text-align: left;
+        justify-content: center;
+        .main__section-h3{
+            font: normal normal 700 1.5rem var(--frauces);
+        }
+    }
+    .image_transform{
+        grid-area:img-transform;
+    }
+    .image_stand-out{
+        grid-area:img-stand;
+    }
+    .art-transform{
+        grid-area:art-transform;
+    }
+    .art-stand{
+        grid-area:art-stand;
+    }
+}
 }
 
 /*Small divices at landscape 576px
