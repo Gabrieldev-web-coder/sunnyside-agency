@@ -87,7 +87,7 @@
         color:var(--white);
         text-transform: uppercase;
         letter-spacing: .3rem;
-        top: 18%;
+        top: var(--titlePosition);
     }
     .header__title::after{
         content: "";
@@ -273,3 +273,15 @@
         margin-bottom: var(--porcentMargin);
     }        
 }
+
+@media screen and (min-width:667px) {
+
+}
+
+/*Small divices at landscape 576px
+Mediun divices less than 768px
+Large divices 992px
+Extra large divices 1200px
+Land scape divices sizes: 568px, 667px,736px 812px
+up of 768 and laptops divices
+*/
