@@ -64,6 +64,13 @@
         --fontSizeArt: 16px;
         --fontSizeArt-title: 2rem;
     }
+    @media screen and (min-width:1024px){
+    --fontSizeArt: 18px;
+    --fontSizeArt-title: 3rem;
+    }
+    @media screen and (min-width:1160px){
+        --porcentMargin: 2%;
+    }
 }
 
 *{
