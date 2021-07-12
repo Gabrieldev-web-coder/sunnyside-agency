@@ -57,6 +57,13 @@
         --titleFontSize: 4rem;
         --porcentMargin:0%;
     }
+    @media screen and (min-width:750px){
+        --arrowSize:60px;
+        --titleFontSize: 5rem;
+        --arrowHeight:200px;
+        --fontSizeArt: 16px;
+        --fontSizeArt-title: 2rem;
+    }
 }
 
 *{
