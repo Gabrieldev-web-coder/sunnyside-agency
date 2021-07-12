@@ -18,6 +18,8 @@
     --porcentMargin:10%;
     --hamburgerMenuPorcent:91%;
     --titlePosition:18%;
+    --fontSizeArt:14px;
+    --fontSizeArt-title:1.5rem;
 
     @media screen and (min-width:280px){
         --titleFontSize:2.4rem;
@@ -48,6 +50,12 @@
         --titlePosition:34%;
         --titleFontSize:3.8rem;
         --hamburgerMenuPorcent: 93%;
+        --porcentMargin:25%;
+    }
+    @media screen and (min-width:667px){
+        --titlePosition: 53%;
+        --titleFontSize: 4rem;
+        --porcentMargin:0%;
     }
 }
 
@@ -111,4 +119,49 @@ body{
        
 .image_galery-sugar-cubes{
     background: url(/images/mobile/image-gallery-sugar-cubes.jpg) no-repeat top center/100%;
+}
+
+@media screen and (min-width:667px){
+    .image-of-footer{
+        width: 50%;
+        height: 0;
+        padding-top: 50%;
+    }
+    .image_header{
+        background: url(/images/mobile/image-header.jpg) no-repeat top center/100%;
+    }
+    
+    .image_transform{
+        background: url(/images/desktop/image-transform.jpg) no-repeat top center/100%;
+    }
+    
+    .image_stand-out{
+        background: url(/images/desktop/image-stand-out.jpg) no-repeat top center/100%;
+    }
+    
+    .image_graphic-design{
+        background: url(/images/desktop/image-graphic-design.jpg) no-repeat top center/100%;
+        padding-top: 83%;
+    }
+    
+    .image_photography{
+        background: url(/images/desktop/image-photography.jpg) no-repeat top center/100%;
+        padding-top: 83%;
+    }
+    
+    .image_galery-milkbottles{
+        background: url(/images/desktop/image-gallery-milkbottles.jpg) no-repeat top center/100%;
+    }
+           
+    .image_galery-orange{
+        background: url(/images/desktop/image-gallery-orange.jpg) no-repeat top center/100%;
+    }
+         
+    .image_galery-cone{
+        background: url(/images/desktop/image-gallery-cone.jpg) no-repeat top center/100%;
+    }
+           
+    .image_galery-sugar-cubes{
+        background: url(/images/desktop/image-gallery-sugarcubes.jpg) no-repeat top center/100%;
+    }
 }

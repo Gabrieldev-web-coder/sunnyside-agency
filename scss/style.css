@@ -18,6 +18,8 @@
   --porcentMargin:10%;
   --hamburgerMenuPorcent:91%;
   --titlePosition:18%;
+  --fontSizeArt:14px;
+  --fontSizeArt-title:1.5rem;
 }
 
 @media screen and (min-width: 280px) {
@@ -64,6 +66,15 @@
     --titlePosition:34%;
     --titleFontSize:3.8rem;
     --hamburgerMenuPorcent: 93%;
+    --porcentMargin:25%;
+  }
+}
+
+@media screen and (min-width: 667px) {
+  :root {
+    --titlePosition: 53%;
+    --titleFontSize: 4rem;
+    --porcentMargin:0%;
   }
 }
 
@@ -128,6 +139,43 @@ body {
 
 .image_galery-sugar-cubes {
   background: url(/images/mobile/image-gallery-sugar-cubes.jpg) no-repeat top center/100%;
+}
+
+@media screen and (min-width: 667px) {
+  .image-of-footer {
+    width: 50%;
+    height: 0;
+    padding-top: 50%;
+  }
+  .image_header {
+    background: url(/images/mobile/image-header.jpg) no-repeat top center/100%;
+  }
+  .image_transform {
+    background: url(/images/desktop/image-transform.jpg) no-repeat top center/100%;
+  }
+  .image_stand-out {
+    background: url(/images/desktop/image-stand-out.jpg) no-repeat top center/100%;
+  }
+  .image_graphic-design {
+    background: url(/images/desktop/image-graphic-design.jpg) no-repeat top center/100%;
+    padding-top: 83%;
+  }
+  .image_photography {
+    background: url(/images/desktop/image-photography.jpg) no-repeat top center/100%;
+    padding-top: 83%;
+  }
+  .image_galery-milkbottles {
+    background: url(/images/desktop/image-gallery-milkbottles.jpg) no-repeat top center/100%;
+  }
+  .image_galery-orange {
+    background: url(/images/desktop/image-gallery-orange.jpg) no-repeat top center/100%;
+  }
+  .image_galery-cone {
+    background: url(/images/desktop/image-gallery-cone.jpg) no-repeat top center/100%;
+  }
+  .image_galery-sugar-cubes {
+    background: url(/images/desktop/image-gallery-sugarcubes.jpg) no-repeat top center/100%;
+  }
 }
 
 #header {
@@ -485,6 +533,45 @@ body {
 }
 
 @media screen and (min-width: 667px) {
+  #header .header__nav .icon-menu {
+    display: none;
+  }
+  #header .header__nav ul {
+    opacity: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: transparent;
+    position: initial;
+    margin: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-transition: initial;
+    transition: initial;
+  }
+  #header .header__nav ul li {
+    margin: .5rem 0rem .5rem 2rem;
+    color: var(--white);
+  }
+  #header .header__nav ul #header__nav-btn-contact {
+    background-color: var(--white);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  #header .header__nav ul #header__nav-btn-contact:hover {
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--white);
+  }
+  #header .header__nav ul::before {
+    content: none;
+  }
   #main__section {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -494,14 +581,21 @@ body {
   }
   #main__section .main__section-article {
     padding: 1.5rem 1.5rem;
-    font-size: 14px;
+    font-size: var(--fontSizeArt);
     text-align: left;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   #main__section .main__section-article .main__section-h3 {
-    font: normal normal 700 1.5rem var(--frauces);
+    font: normal normal 700 var(--fontSizeArt-title) var(--frauces);
+  }
+  #main__section .main__about-article .main__about-text-container .main__about-h3 {
+    font-size: var(--fontSizeArt-title);
+    margin: 0;
+  }
+  #main__section .main__about-article .main__about-text-container .main__about-p {
+    font-size: var(--fontSizeArt);
   }
   #main__section .image_transform {
     -ms-grid-row: 1;
@@ -522,6 +616,10 @@ body {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: art-stand;
+  }
+  #footer .footer__wrapper .image-of-footer {
+    width: 25%;
+    padding-top: 31%;
   }
 }
 

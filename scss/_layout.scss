@@ -275,6 +275,41 @@
 }
 
 @media screen and (min-width:667px) {
+
+    #header{
+        .header__nav{
+            .icon-menu{
+                display: none;
+            }
+            ul{
+                opacity: 1;
+                flex-direction: row;
+                align-items: center;
+                background-color: transparent;
+                position: initial;
+                margin: 0;
+                justify-content: flex-end;
+                transition: initial;
+                li{
+                    margin: .5rem 0rem .5rem 2rem;
+                    color: var(--white);
+                }
+                #header__nav-btn-contact{
+                    background-color: var(--white);
+                    transition: .5s;
+                }
+                #header__nav-btn-contact:hover{
+                    transition: .5s;
+                    background-color: rgba(255, 255, 255, .5);
+                    color: var(--white);
+                }
+            }
+            ul::before{
+                content: none;
+            }
+        }
+    }
+
     #main__section{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -283,11 +318,22 @@
     'img-stand art-stand';
     .main__section-article{
         padding: 1.5rem 1.5rem;
-        font-size: 14px;
+        font-size: var(--fontSizeArt);
         text-align: left;
         justify-content: center;
         .main__section-h3{
-            font: normal normal 700 1.5rem var(--frauces);
+            font: normal normal 700 var(--fontSizeArt-title) var(--frauces);
+        }
+    }
+    .main__about-article{
+        .main__about-text-container{
+            .main__about-h3{
+                font-size: var(--fontSizeArt-title);
+                margin: 0;
+            }
+            .main__about-p{
+                font-size: var(--fontSizeArt);
+            }
         }
     }
     .image_transform{
@@ -303,6 +349,16 @@
         grid-area:art-stand;
     }
 }
+    
+    #footer{
+        .footer__wrapper{
+            .image-of-footer{
+                width: 25%;
+                padding-top: 31%;
+            }
+        }
+    }
+
 }
 
 /*Small divices at landscape 576px
