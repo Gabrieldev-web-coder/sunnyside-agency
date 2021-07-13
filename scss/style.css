@@ -72,9 +72,12 @@
 
 @media screen and (min-width: 667px) {
   :root {
-    --titlePosition: 53%;
-    --titleFontSize: 4rem;
-    --porcentMargin:0%;
+    --titlePosition: 27%;
+    --titleFontSize: 2rem;
+    --porcentMargin:-1%;
+    --arrowSize: 20px;
+    --arrowHeight: 62px;
+    --valueCalc: -16%;
   }
 }
 
@@ -171,7 +174,8 @@ body {
     padding-top: 50%;
   }
   .image_header {
-    background: url(/images/mobile/image-header.jpg) no-repeat top center/100%;
+    background: url(/images/desktop/image-header.jpg) no-repeat top center/100%;
+    padding-top: 55%;
   }
   .image_transform {
     background: url(/images/desktop/image-transform.jpg) no-repeat top center/100%;
