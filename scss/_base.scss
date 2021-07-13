@@ -53,7 +53,7 @@
         --porcentMargin:25%;
     }
     @media screen and (min-width:667px){
-        --titlePosition: 27%;
+        --titlePosition: 22%;
         --titleFontSize: 2rem;
         --porcentMargin:-1%;
         --arrowSize: 20px;
@@ -61,18 +61,31 @@
         --valueCalc: -16%;
     }
     @media screen and (min-width:750px){
+        /*
         --arrowSize:60px;
         --titleFontSize: 5rem;
+        */
+        --titlePosition:22%;
         --arrowHeight:200px;
         --fontSizeArt: 16px;
         --fontSizeArt-title: 2rem;
     }
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:990px){
     --fontSizeArt: 18px;
     --fontSizeArt-title: 3rem;
+    --titleFontSize: 3rem;
+    --arrowHeight: 94px;
+    --arrowSize: 30px;
+    --valueCalc: -13%;
     }
     @media screen and (min-width:1160px){
         --porcentMargin: 2%;
+    }
+    @media screen and (min-width:1222px){
+        --valueCalc: -10%;
+        --titleFontSize: 4.5rem;
+        --arrowHeight: 126px;
+        --arrowSize: 40px;
     }
 }
 
