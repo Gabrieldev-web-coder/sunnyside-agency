@@ -258,12 +258,26 @@
             display: flex;
             justify-content: space-evenly;
             margin: 1.5rem 0rem 0rem 0rem;
+            .footer__bottom-span{
+                transition: .5s;
+                cursor: pointer;
+            }
+            .footer__bottom-span:hover{
+                transition: .5s;
+                color: var(--white);
+            }
         }
     }
     .footer__bottom-icons{
         padding: 3rem 0;
         i{
+            cursor: pointer;
             margin: 0rem .5rem;
+            transition: .5s;
+        }
+        i:hover{
+            transition: .5s;
+            color: var(--white);
         }
     }
 }
@@ -379,6 +393,11 @@
 }
 
 @media screen and (min-width:1024px){
+    #header{
+        .header__nav{
+            padding:2rem;
+        }
+    }
     #main__section{
         .main__section-article{
             padding: 2% 18%;
