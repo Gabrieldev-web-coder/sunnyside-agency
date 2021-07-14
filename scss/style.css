@@ -117,6 +117,13 @@
     --titleFontSize: 4.5rem;
     --arrowHeight: 126px;
     --arrowSize: 40px;
+    --titlePosition: 26%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    --titlePosition: 30%;
   }
 }
 
